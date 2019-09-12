@@ -1,0 +1,28 @@
+visualization:
+  use_visdom: True
+  visdom_port: 9000
+  visdom_server: 'http://localhost'
+
+  image:
+    every: 10
+    scale: 1
+
+model:
+  window_size: 224
+
+dataset:
+  folder_path: '../../data/imagenet/images/'
+
+train:
+  optimizer: 'adam'
+  lr: 0.001
+  weight_decay: 0.0000000001
+
+  epochs: 150
+  batch_size: 4
+  number_of_processes: 8
+
+  save:
+    model: '../../data/weights/model_1/'
+    every: 10
+  load: False
