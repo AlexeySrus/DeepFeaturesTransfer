@@ -1,6 +1,7 @@
 # MacOS
 *.DS_Store
 *.idea
+*edge_detector
 
 # Jupyter Notebook / other
 *.ipynb_checkpoints
